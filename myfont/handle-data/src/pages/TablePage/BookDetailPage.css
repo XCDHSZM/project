@@ -1,0 +1,191 @@
+.backgroundImage {
+    background-image: url('../../../src/static/clouds.jpg');
+    /* 替换为您的图片URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /* 确保背景覆盖整个视窗高度 */
+}
+
+
+.cardShadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.cardShadow:hover {
+    transform: translateY(-5px);
+}
+.contentStyle {
+    fontFamily: 'Arial, sans-serif';
+    lineHeight: 2;
+    fontSize: 14px;
+    maxHeight: 300px;
+    overflowY: auto;
+}
+
+
+/* hly */
+.idiom {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip {
+  position: absolute;
+    background-color: #ffa455;
+    padding: 0 4px;
+    border-radius: 10px;
+    display: none; /* 默认隐藏提示信息 */
+    top: 14px; /* 提示框与内容平齐 */
+    left: 55px; /*提示框与内容平齐 */ 
+    z-index: 1; /* 提示框位于内容之上 */
+    width: 300px; /* 设置悬浮框的宽度 */
+    max-height: 200px; /* 设置悬浮框的最大高度 */
+    overflow-y: auto; /* 当内容溢出时显示滚动条 */
+}
+.idiom:hover .tooltip,
+.tooltip:hover {
+  display: block; /* 鼠标悬停在成语或提示信息上时显示提示信息 */
+}
+
+.tooltip-content {
+  font-size: 9px;
+    color: #333333;
+    /* line-height: 1.5; */
+}
+.recommend_divClass {
+    /* margin-top: 5px;   设置上方间距为 10px */
+    margin-bottom: 10px; /* 设置下方间距为 10px */
+    display: flex;
+    align-items: center; /* 将内容垂直居中 */
+}
+
+  .recommend_container{
+    position: relative; 
+    display: inline-block;
+
+  }
+.recommend_container::before {
+    content: attr(data-text); /*使用伪元素设置文字内容 */
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 上边距50% */
+    left: 45%; /* 左边距50% */
+    transform: translate(-50%, -50%); /* 使用transform属性将文字居中 */
+    z-index: 1; /* 确保文字在图片上层显示 */
+    font-size: 13px; /* 设置文字大小 */
+    /* font-weight: bold; 设置文字加粗 */
+    color: yellowgreen; /* 设置文字颜色 */
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 使用省略号代替超出部分 */
+    max-width: 60%;
+  } 
+
+  .recommend_divClass a {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    text-decoration: none; /* 移除链接下划线 */
+    color: #000000ac; /* 链接文字颜色 */
+  }
+  .recommend_divClass a:hover {
+    color: #5da5f9; /* 鼠标悬停时文字颜色 */
+  }
+  .recommend_divClass img {
+    display: block;
+    width: 135px; /* 设置图片宽度 */
+    height: 75px; /* 高度 */
+    margin-right: 10px; 
+    border-radius: 10px; /* 边框圆角 */
+  }
+  
+
+ .text{
+    flex-grow: 1; /* 文字占据剩余空间 */
+    width: 147px; /* 设置容器宽度 */
+    white-space: nowrap; /* 文本不换行 */
+    overflow: hidden; /* 隐藏溢出部分 */
+    text-overflow: ellipsis; /* 使用省略号代替溢出部分 */
+    max-width: 100%;
+    /* padding: 5px;内边距 */
+  }
+  
+  .author{
+    flex-grow: 1; /* 文字占据剩余空间 */
+    color: #9f9fa1; /* 作者和热度文字颜色 */
+    /* padding: 5px;内边距 */
+  }
+  .supple{
+    flex-grow: 1; /* 文字占据剩余空间 */
+    display: inline-flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    color: #9f9fa1; /* 作者和热度文字颜色 */
+    /* padding: 5px;内边距 */
+  }
+  .supple img {
+    width: 20px; /* 设置图片宽度 */
+    height: auto; /* 高度 */
+    margin-right: 3px; 
+  }
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* filter */
+/* 默认按钮样式 */
+
+
+.custom-button {
+  background-color: #1890ff; /* 按钮默认背景色 */
+  color: #fff; /* 按钮文字颜色 */
+  border-radius: 10%;
+  padding: 10px 20px; /* 按钮内边距 */
+  border: none; /* 移除按钮边框 */
+  cursor: pointer; /* 鼠标悬停样式为手型 */
+  transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+/* 按钮点击时的样式 */
+.custom-button:active {
+  
+  background-color: #1890ff; /* 按钮点击后的背景色加深 */
+}
+
+.custom-button:active {
+  background-color: #0056b3; /* 按钮点击后的背景色加深 */
+}
+
+/* table */
+.custom-table-container {
+  background-color:  #41a0f9;
+  padding: 20px;
+}
+
+.custom-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-column-header {
+  background-color: white; 
+  color: rgb(0, 0, 0); 
+  /* font-weight: bold;  */
+
+}
+

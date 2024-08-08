@@ -1,0 +1,63 @@
+.admin-row {
+    background-color: rgba(243, 226, 226, 0.998);
+}
+
+.admin-row:hover,
+.no-hover .ant-table-tbody>.admin-row:hover,
+.no-hover .ant-table-tbody>.admin-row:hover>td {
+    background-color: rgba(243, 226, 226, 0.998) !important;
+}
+
+.regular-row {
+    background-color: white;
+}
+
+.regular-row:hover,
+.no-hover .ant-table-tbody>.regular-row:hover,
+.no-hover .ant-table-tbody>.regular-row:hover>td {
+    background-color: white !important;
+}
+
+
+/* doc */
+/* styles.css */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    /* text-align: mid; */
+}
+
+.table th, .table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #3cb8fb;
+    
+}
+.table {
+    height: 100px; /* 设置表格高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+}
+
+/* button */
+.analyse-button {
+    background-color: #007bff; /* 按钮默认背景色 */
+    color: #fff; /* 按钮文字颜色 */
+    padding: 10px 20px; /* 按钮内边距 */
+    border: none; /* 移除按钮边框 */
+    cursor: pointer; /* 鼠标悬停样式为手型 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+  }
+  
+  /* 按钮点击时的样式 */
+  .analyse-button:active {
+    background-color: #1890ff; /* 按钮点击后的背景色加深 */
+  }
+  
+  .analyse-button:active {
+    background-color: #0056b3; /* 按钮点击后的背景色加深 */
+  }

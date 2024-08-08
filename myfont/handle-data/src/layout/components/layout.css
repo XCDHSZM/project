@@ -1,0 +1,14 @@
+/* 在App.css或组件的样式文件中添加 */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOutAnimation {
+    animation: fadeOut 3s forwards;
+}

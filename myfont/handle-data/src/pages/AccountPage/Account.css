@@ -1,0 +1,50 @@
+.top-placeholder::placeholder {
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    /* 定位到顶部 */
+    transform: translateY(10%);
+    /* 微调位置 */
+    padding-left: 11px;
+    /* 与Input文字对齐 */
+}
+
+/* 针对ant-design的样式重写 */
+.top-placeholder .ant-input {
+    padding-top: 8px;
+    /* 额外的空间给placeholder */
+}
+
+.analysis-result {
+    max-height: 200px;
+    /* 根据你的行高和希望显示的行数调整 */
+    overflow-y: auto;
+    /* 显示垂直滚动条 */
+    margin-top: 8px;
+    /* 可选，为了美观 */
+}
+
+.content-analysis {
+    position: relative;
+    /* 使内部绝对定位的元素相对于此定位 */
+    height: 100%;
+    /* 确保有足够的高度 */
+}
+
+.submit-button {
+    position: absolute;
+    /* 绝对定位 */
+    right: 8px;
+    /* 距离父容器右侧的距离 */
+    bottom: 8px;
+    /* 距离父容器底部的距离 */
+}
+
+.cellScroll {
+    max-height: 100px;
+    /* 限制单元格内容的最大高度 */
+    overflow-y: auto;
+    /* 内容超出时显示垂直滚动条 */
+    overflow-x: hidden;
+    /* 隐藏水平滚动条 */
+}

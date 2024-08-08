@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 8px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.globa_spin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_spin {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-page-container {
+  background-image: url('../src/static/clouds.jpg');
+  /* 更新为正确的路径 */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 24px;
+  border-radius: 15px;
+}
+
+/* Account.css */
+.detail-page-container .ant-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* 确保内容从顶部开始 */
+}
+
+.content-input,
+.content-analysis {
+  margin-bottom: 16px;
+  /* 在组件底部添加一些间距 */
+}
+
+/* 确保输入框和解析结果容器有统一的最小高度 */
+.content-input,
+.content-analysis {
+  min-height: 300px;
+  /* 根据需要调整 */
+}
+
+.analysis-result {
+  flex-grow: 1;
+  /* 允许解析结果占据剩余空间 */
+  overflow: auto;
+  /* 如果内容过多，允许滚动 */
+}
+
+/* 添加全局样式来增强立体感 */
+.global-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 轻微的阴影效果 */
+  border-radius: 8px;
+  /* 圆角边框 */
+  background: rgba(255, 255, 255, 0.8);
+  /* 轻微透明的背景增加层次感 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* 平滑过渡效果 */
+}
+
+.global-shadow:hover {
+  transform: translateY(-5px);
+  /* 悬停时上移，增强立体感 */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  /* 悬停时增加阴影，增强立体效果 */
+}

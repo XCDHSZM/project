@@ -1,0 +1,52 @@
+.content-card-container {
+    padding: 20px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* 平滑变换效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 添加阴影以增加立体感 */
+    border-radius: 8px;
+    /* 可选: 添加边框圆角以美化卡片 */
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    /* 悬浮效果 */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    /* 可选: 增加阴影以增强立体感 */
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detail-page-container {
+    /* 设置背景图片 */
+    background-image: url('../../../src/static/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    /* 确保背景覆盖整个视窗高度 */
+    padding: 24px;
+    /* 根据需要调整内边距 */
+    border-radius: 15px;
+}

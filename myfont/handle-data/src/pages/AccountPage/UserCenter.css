@@ -1,0 +1,17 @@
+.Space {
+    height: 80px;
+  }
+.Text {
+    font-size: 20px;
+  }
+  .Border{
+    /* padding-bottom: 8px; 盒子下边距，这里用来指定下划线距离文字的高度 */
+    border-bottom: 2px solid rgb(238, 237, 237);/*设定一个2px，实线，天蓝色的下边距*/
+
+  }
+  .Color{
+    background-color: #00bbff; /* 荧光蓝色 */
+    color: #FFFFFF; /* 白色 */
+    padding: 5px;
+    border-radius: 3px; /* 边角钝化为 10px */
+  }
